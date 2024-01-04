@@ -1,4 +1,3 @@
-import 'package:apitutorials/example_two.dart';
 import 'package:apitutorials/home_screen.dart';
 import 'package:flutter/material.dart';
 

@@ -1,3 +1,4 @@
+import 'package:apitutorials/example_two.dart';
 import 'package:apitutorials/postdata_screen.dart';
 import 'package:flutter/material.dart';
 class MyHomeScreen extends StatefulWidget {
@@ -42,7 +43,7 @@ class _MyHomeScreenState extends State<MyHomeScreen> {
                 ),
               ),
               Container(
-                height: 600,
+                height: 300,
               child: Center(
                 child: ElevatedButton(
                             onPressed: () {
@@ -56,7 +57,24 @@ class _MyHomeScreenState extends State<MyHomeScreen> {
                         end: Alignment.bottomRight,
                         colors:[Colors.deepPurple,Colors.pink,Colors.deepOrange])
                 ),
-              )]),)
+              ),
+              Container(
+                height: 300,
+                child: Center(
+                  child: ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(context,MaterialPageRoute(
+                          builder: (context) => const ExampleTwo()),);},
+                    child: Text('Show Data 2'),),
+                ),
+                decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                        begin: Alignment.topLeft,
+                        end: Alignment.bottomRight,
+                        colors:[Colors.deepPurple,Colors.pink,Colors.deepOrange])
+                ),
+              )
+            ]),)
           ]
       ),
     );
